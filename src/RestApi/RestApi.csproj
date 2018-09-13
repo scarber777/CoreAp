@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Features\ExampleFeature\" />
-    <Folder Include="Shared\Rest\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

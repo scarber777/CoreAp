@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace RestApi.Shared.Gets
 {
-    public class PageResults<T>
+    public class PagedResults<T>
     {
         /// <summary>
         /// The page number this page represents.
