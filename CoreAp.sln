@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi", "src\RestApi\Rest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiTest", "test\RestApiTest\RestApiTest.csproj", "{1D7ADD1A-3333-47DE-BE7B-A219DC58F437}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0283CCF5-E859-4340-93F5-D97A2665C090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1D7ADD1A-3333-47DE-BE7B-A219DC58F437}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D7ADD1A-3333-47DE-BE7B-A219DC58F437}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D7ADD1A-3333-47DE-BE7B-A219DC58F437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0283CCF5-E859-4340-93F5-D97A2665C090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0283CCF5-E859-4340-93F5-D97A2665C090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0283CCF5-E859-4340-93F5-D97A2665C090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0283CCF5-E859-4340-93F5-D97A2665C090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

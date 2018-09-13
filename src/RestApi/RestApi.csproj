@@ -4,13 +4,11 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <DockerTargetOS>Linux</DockerTargetOS>
     <UserSecretsId>6c115869-904b-4605-9d60-f6503532c397</UserSecretsId>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
     <Folder Include="Features\ExampleFeature\" />
-    <Folder Include="Shared\Errors\" />
-    <Folder Include="Shared\Gets\" />
     <Folder Include="Shared\Rest\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
