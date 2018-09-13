@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Autofac.Features.Variance;
-using AutoMapper.Configuration;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json.Converters;
 using RestApi.Shared;
@@ -35,6 +35,8 @@ namespace RestApi
             //Adding our in memory database for the basic template
             //TODO Replace this with the actual database connection
             services.AddDbContext<RestApiDbContext>(options => options.UseInMemoryDatabase("RestApiDatabase"));
+
+            services.AddSingleton(provider => RestApiMapperFactory.CreateMapper());
 
             //patch up mvc to handle json as strings instead of numbers
             services.AddMvc().AddJsonOptions(options =>
